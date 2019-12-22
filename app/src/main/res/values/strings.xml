@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">CPUSelectionAsistant</string>
+    <string name="send_to_server">Получить результат!</string>
+    <string name="next">Далее..</string>
+    <string name="computing">Computing..."</string>
+    <string name="error">API error..."</string>
+
+    <string name="embedded_options_available">Embedded Options Available:</string>
+    <string name="intel_turbo_boost_technology">Intel Turbo Boost Technology:</string>
+    <string name="intel_virtualization_technology">Intel® Virtualization Technology :</string>
+    <string name="tdp_20w">TDP: </string>
+    <string name="t_100_c">T: </string>
+    <string name="processor_base_frequency_hz_mhz">Processor Base Frequency (Hz/MHz)</string>
+    <string name="nb_of_cores">Num of cores: </string>
+    <string name="lithography_nm">Lithography, nm:</string>
+    <string name="launch_date">launch date</string>
+    <string name="status">Status</string>
+    <string name="try_again">Try again</string>
+    <string name="segment">Vertical segment</string>
+    <string name="welcome">Выберите нужные характеристики\n  и получите прогноз,\n на семейство процессоров,  которые удовлетворяют указанным характеристикам..</string>
+    <string name="cache">Cache, mb:</string>
+
+    <string-array name="yes_no_arr">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="tbt_arr">
+        <item>Yes</item>
+        <item>2.0</item>>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="vertical_seg_arr">
+        <item>Server</item>
+        <item>Mobile</item>>
+        <item>Desktop</item>
+        <item>Embedded</item>
+    </string-array>
+
+    <string-array name="status_arr">
+        <item>Launched</item>
+        <item>End of Interactive Support</item>>
+        <item>End of Life</item>
+        <item>Announced</item>
+    </string-array>
+</resources>
+
