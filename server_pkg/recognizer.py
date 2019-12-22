@@ -1,4 +1,5 @@
 from sklearn.tree import DecisionTreeClassifier
+import random
 import pandas as pd
 from server_pkg.utils import *
 
@@ -18,10 +19,14 @@ def get_data_frame_from_JSON(json):
     # подготовим DF:
     for key, val in json.items():
         if key in data_code:
-            # Нужна проверка если мы указали не существующий Lanunch Date
-            json[key] = data_code[key][val]
+            if val in data_code[key]:
+                json[key] = data_code[key][val]
+            else:
+                json[key] = data_code[key][random.choice(list(data_code[key].keys()))]
     return pd.DataFrame(json, index=[0])
 
 def get_predict_json(df):
     predict_val = decision_tree_loaded.predict(df)
+    print("predict - " + str(predict_val[0]));
+    print("\t" + product_collection[str(predict_val[0])])
     return {"cpu_series" : product_collection[str(predict_val[0])]}
